@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CommonUseCases</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container container">
+            <ul class="header-menu">
+                <li class="header-menu-item">
+                    <a  class="header-menu-link">Якорі</a>
+                    <ul class="header-submenu">
+                    <li><a href="#home-cat" >Секція cat</a></li>
+                    <li><a href="#home-overlay" >Секція overlay </a></li>
+                    <li><a>Відеокарти</a></li>
+                    <li><a>Периферія</a></li>
+                </ul>
+                </li>
+                <li class="header-menu-item">
+                    <a class="header-menu-link">Товари для дому</a>
+                    <ul class="header-submenu">
+                    <li><a>Кондиціонери</a></li>
+                    <li><a>Бойлери</a></li>
+                </ul>
+                </li>
+                <li class="header-menu-item">
+                    <a class="header-menu-link">Побутова техніка</a>
+                    <ul class="header-submenu">
+                    <li><a>Холодильники</a></li>
+                    <li><a>Плитки</a></li>
+                    <li><a>Варочні панелі</a></li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="page">
+        <section class="home-overvlof overflow-home">
+            <div class="overflow-home-container container">
+            <div class="holder">
+                <div class="exemple">
+                        <p class="textBox visible">
+                    Мій текст, що виходить за розміри контейнера, буде видно. Це визначено властивістю overflow: visible;
+                   </p>
+                <p class="textBox hidden">
+                    Мій текст, що виходить за розміри контейнера, не буде видно. Це визначено властивістю overflow: hidden;
+                    </p>
+                <p class="textBox scroll">
+                    Полоси прокрутки будуть завжди, навіть коли не потрібні.
+                    </p>
+                <p class="textBox auto">
+                    Полоси прокрутки з'являються тільки в тому випадку, коли є переповнення (overflow), тобто коли контент не поміщається в контейнер.
+                </p>
+                </div>
+                <div class="rule">
+                <p><em>overflow: hidden;</em> 
+                    Ховати те, що виходить за межі контейнера (елемента)</p>
+                <p><em>overflow: visible;</em> 
+                    Показувати те, що виходить за межі контейнера</p>
+                <p><em>overflow: scroll;</em> 
+                    Показувати полоси прокрутки завжди</p>
+                <p><em>overflow: auto;</em> 
+                    Показувати полоси прокрутки тільки тоді, коли контент не влазить в елемент</p> <br>
+                <p><strong>Елемент є контейнером, тобто призначений для розташування в ньому контенту (вмісту). Об'єм чи фізичні розміри можуть перевищувати розміри елемента, наприклад 2 літри молока не помістяться в плашці. Відбувається переповнення (overflow). За допомогою властивості overflow ми визначаємо, що робити в такому випадку.</strong></p>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section id="home-cat"  class="home-cat cat-home">
+            <div class="cat-home-container container">
+                <div class="cat-home-wrapper">
+                    <img src="https://images.pexels.com/photos/33492/cat-red-cute-mackerel.jpg?auto=compress&cs=tinysrgb&h=480&w=640" alt="Cat">
+                </div>
+            </div>
+        </section>
+        <section  id="home-overlay" class="hone-overlay overlay-home">
+            <div class="overlay-home-container container">
+                <h2 class="overlay-home-title">Move the mouse over the square</h2>
+                <div class="overlay-home-box">
+                    <div class="overlay-home-overlay">
+                        <p class="overlay-home-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius hic, quia accusamus placeat cumque tempora molestiae labore magni ad voluptates optio, ipsum sed ex doloremque! Vel dolore adipisci corporis architecto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a href="#" class="scroll-to-top"></a>
+    </main>
+    <footer class="footer"></footer>
+</body>
+</html>
